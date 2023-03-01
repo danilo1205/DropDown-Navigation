@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu">
+        <div class="menu--left">
+          <img class="logo" src="./assets/images/logo.svg" alt="Logo Snap">
+          <nav class="list">
+            <ul>
+              <li><a href="#" class="item-drop" id="drop-features">Features <img id="menu-down" src="./assets/images/icon-arrow-down.svg" alt=""></a></li>
+                  <ul id="menu-list-features">
+                    <li><a href="#" class="item"><img src="./assets/images/icon-todo.svg" alt="">Todo List</a></li>
+                    <li><a href="#" class="item"><img src="./assets/images/icon-calendar.svg" alt="">Calendar</a></li>
+                    <li><a href="#" class="item"><img src="./assets/images/icon-reminders.svg" alt="">Reminders</a></li>
+                    <li><a href="#" class="item"><img src="./assets/images/icon-planning.svg" alt="">Planning</a></li>
+                  </ul>
+              <li><a href="#" class="item-drop" id ="drop-company">Company<img id="menu-down-2" src="./assets/images/icon-arrow-down.svg" alt=""></a></li>
+                <ul id="menu-list-company">
+                  <li><a href="#" class="item">History</a></li>
+                  <li><a href="#" class="item">Our Team</a></li>
+                  <li><a href="#" class="item">Blog</a></li>
+                </ul>
+              <li><a href="">Careers</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu--right">
+          <nav class="list">
+            <ul class="login-register">
+              <li><a href="">Login</a></li>
+              <li class="register"><a href="" class="register--">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+      
+      <div class="menu--sand">
+        <img src="./assets/images/icon-menu.svg" class="sand--icon" alt="">
+      </div>
+    </div>
+
+  </header>
+  <main class="container">
+    <div class="banner--left">
+      <div class="banner--left-text">
+        <h1>Make remote work</h1>
+        <h2>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</h2>
+        <button type="submit" class="button-banner">Learn more</button>
+      </div>
+      <div class="logos">
+        <img src="./assets/images/client-databiz.svg" alt="Logo Databiz">
+        <img src="./assets/images/client-audiophile.svg" alt="Logo Audiophile">
+        <img src="./assets/images/client-meet.svg" alt="Logo Meet">
+        <img src="./assets/images/client-maker.svg" alt="Logo Maker">
+      </div>
+    </div>
+
+
+    
+    <div class="banner--right">
+      <div class="bg-mobile">
+        <img src="./assets/images/image-hero-mobile.png" class="img-banner-mobile" alt="">
+      </div>
+      <div class="bg-desktop">
+        <img src="./assets/images/image-hero-desktop.png" class="img-banner" alt="">
+      </div>
+      
+    </div>
+
+  </main>
+  <footer class="footer">
+    Coded by Danilo Ferreira Lacerda.
+  </footer>
+  <script src="./app/app.js"></script>
+</body>
+</html>

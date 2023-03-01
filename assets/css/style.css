@@ -1,0 +1,259 @@
+body {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0px;
+    
+}
+.menu, .menu--left, .menu--right, ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    margin: 10px;
+}
+
+.menu--sand{
+    display: none;
+}
+
+.logo{
+    height: 30px;
+}
+
+.list{
+    display: flex;
+    justify-content: left;
+}
+
+ul, li a{
+    text-decoration: none;
+    list-style: none;
+    color: #828282;
+}
+
+li {
+    margin: 15px;
+    font-size: 15px;   
+}
+
+.item-drop, a.item{
+    display: flex;
+    align-items: center;
+}
+
+ul, li a img{
+    margin: 2px;
+}
+
+#drop-features{
+    position: relative;
+}
+
+#menu-list-features{
+    display: none;
+    position: absolute;
+    top: calc(5% + 10px);
+    left: 120px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+
+
+#drop-company{
+    position: relative;
+}
+
+#menu-list-company{
+    display: none;
+    position: absolute;
+    top: calc(5% + 10px);
+    left: 260px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+#menu-list-features.show, #menu-list-company.show {
+    display: block;
+    
+}
+
+.actived{
+    color: #161616;
+    font-weight: 700;
+    border-color: #161616;
+}
+
+a.item img{
+    margin-right: 6px;
+}
+
+.register--{
+    padding: 20px;
+    border: 2px solid #828282;
+    border-radius: 10px;
+}
+
+li:hover, .register--:hover, a:hover{
+    color: #161616;
+    font-weight: 700;
+    border-color: #161616;
+}
+
+.container{
+    display: flex;
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-bottom: 50px;
+}
+
+.banner--left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.banner--left h1{
+    font-size: 75px;
+    color: hsl(0, 0%, 8%);
+    margin-bottom: 70px;
+}
+
+.banner--left h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+
+.banner--right{
+    display: flex;
+    flex: 1;
+}
+
+.banner--right img{
+    max-width: 400px;
+    margin: auto;
+}
+
+.bg-mobile{
+    display: none;
+}
+
+.banner--left-text button{
+    padding: 15px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.banner--left-text button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.logos img{
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 375px){
+    body{
+        margin: 0;
+        width: 375px;
+    }
+    .list{
+        display: none;
+    }
+
+    .menu--sand{
+        display: block;
+    }
+
+    .container{
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(1fr, 1);
+    }
+
+    .bg-desktop{
+        display: none;
+    }
+
+    .bg-mobile{
+        display: block;
+    }
+
+    .img-banner-mobile{
+        width: 375px;
+
+    }
+
+    .banner--right{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .banner--left{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-content: center;
+        align-items: center;
+        margin: 0px
+    }
+
+    .banner--left-text h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .banner--left-text h2{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .button-banner{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .logos{
+        width: 375px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .logos img{
+        width: 70px;
+        margin: 0px;
+        padding: 1px;
+    }
+  
+}
